@@ -1176,14 +1176,19 @@
         "signature": "95b5a3078fdc51508d5d9cde59a1dd9525b53fd42dc12265a55261fd415d3274",
         "affectsGlobalScope": false
       },
+      "../src/tasks/task.model.ts": {
+        "version": "f9446ab26ab1375575fef38de6e69becdba32313fc2fe43a73163a8c48fa73e8",
+        "signature": "1f1972745fd56e4323782ccdc86730f1ae6b07fc29012c7c2a2872104f6d6fca",
+        "affectsGlobalScope": false
+      },
       "../src/tasks/tasks.service.ts": {
-        "version": "2643d5f6313eeb71d1bafe76cabd572952f8d6ffcfec8190b1dd065024d6b296",
-        "signature": "4248e823eafd544b1eebc803ebe55f6bedb072abab6708af72a677c6aff8af8f",
+        "version": "0d48d500eb526f3303231dc7e73905674336d5d6d6a212088edfda19a0da5324",
+        "signature": "a0d2ac7b0b8df11b5c7ca216367dcb8de2a3f32587234d317453758a0de163dd",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "bf69fa0a2481a11d82220b6275ffbd0a4ac1b9fa8baf04c3a47d878fc64c8c69",
-        "signature": "ba014b7b9ded57ba85483d43d55a28662e4dec3f4668ae11740aa8cbe6f096fd",
+        "version": "3c556432ed4576ff536cf7cdc4a2bbb2db6b5c909f3e99d57f44c887d4ff65ae",
+        "signature": "29ed76d4ea8483ac7c81bded6562563c62a2f056f985df7c2e2e3c168691d160",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.module.ts": {
@@ -3221,6 +3226,7 @@
       ],
       "../src/tasks/tasks.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
       "../src/tasks/tasks.module.ts": [
@@ -3229,7 +3235,8 @@
         "../src/tasks/tasks.service.ts"
       ],
       "../src/tasks/tasks.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/tasks/task.model.ts"
       ]
     },
     "exportedModulesMap": {
@@ -4508,7 +4515,11 @@
         "../node_modules/rxjs/internal/types.d.ts"
       ],
       "../src/tasks/tasks.controller.ts": [
+        "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
+      ],
+      "../src/tasks/tasks.service.ts": [
+        "../src/tasks/task.model.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -4893,6 +4904,7 @@
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/app.module.ts",
       "../src/main.ts",
+      "../src/tasks/task.model.ts",
       "../src/tasks/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",
       "../src/tasks/tasks.service.ts"
