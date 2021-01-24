@@ -1177,13 +1177,13 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.service.ts": {
-        "version": "6ad216726c0783fdd7c93b07c66ec7b437deff505473d4f9d5ea0f95bf78ff61",
-        "signature": "c7b7a4ec8c1f2ed88fc70b256e45ddf8458cb295debebd89fd4e302a8d749695",
+        "version": "2643d5f6313eeb71d1bafe76cabd572952f8d6ffcfec8190b1dd065024d6b296",
+        "signature": "4248e823eafd544b1eebc803ebe55f6bedb072abab6708af72a677c6aff8af8f",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "f87b9e4494565b0055b378050ddd2599c412f28caad6dd32b8a44b226ea9264e",
-        "signature": "b0ab160a001c63a22dcfcf79f5e5d35c36bf61f346a3adce9bb26bd36cd192c7",
+        "version": "bf69fa0a2481a11d82220b6275ffbd0a4ac1b9fa8baf04c3a47d878fc64c8c69",
+        "signature": "ba014b7b9ded57ba85483d43d55a28662e4dec3f4668ae11740aa8cbe6f096fd",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.module.ts": {
