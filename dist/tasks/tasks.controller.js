@@ -29,6 +29,9 @@ let TasksController = class TasksController {
     createTask(createTaskDTO) {
         return this.tasksService.createTask(createTaskDTO);
     }
+    deleteTask(id) {
+        this.tasksService.deleteTask(id);
+    }
 };
 __decorate([
     common_1.Get(),
@@ -50,6 +53,13 @@ __decorate([
     __metadata("design:paramtypes", [create_task_dto_1.CreateTaskDTO]),
     __metadata("design:returntype", Object)
 ], TasksController.prototype, "createTask", null);
+__decorate([
+    common_1.Delete('/:id'),
+    __param(0, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [String]),
+    __metadata("design:returntype", void 0)
+], TasksController.prototype, "deleteTask", null);
 TasksController = __decorate([
     common_1.Controller('tasks'),
     __metadata("design:paramtypes", [tasks_service_1.TasksService])
