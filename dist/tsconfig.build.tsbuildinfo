@@ -1817,7 +1817,7 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.service.ts": {
-        "version": "66d02aaf8f41a100538c63e76fc58b1d8c77195d13a5251a6bb5e08e6887db34",
+        "version": "c54f77703ba22b1a64bce7e6c96cf510d220d55fb284122e7296015cf77e77d3",
         "signature": "a126f76f8b842c1f9c706b11453d0d83cfea97e34c5c89e117bd797dedf1a7c5",
         "affectsGlobalScope": false
       },
