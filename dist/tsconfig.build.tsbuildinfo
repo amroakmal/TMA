@@ -1812,12 +1812,12 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/dto/get-tasks-filter.dto.ts": {
-        "version": "9b6efea9c60aaada86382e3658d269feca13019c85a2f3d82e0777e2b6473fd4",
+        "version": "acc5bde11bb2e8471089882910f5039884e3b9c47c7c84a71979f6d8bcbc399e",
         "signature": "d0b7e7a8eda290b19f5fe90094da0978cb1d9cf32c4f6138dea0946cc3927131",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.service.ts": {
-        "version": "c54f77703ba22b1a64bce7e6c96cf510d220d55fb284122e7296015cf77e77d3",
+        "version": "73f137cebb1151cad15ae6bbdfdda95241ea813e2d43ed6f9f0ac52fe88617e4",
         "signature": "a126f76f8b842c1f9c706b11453d0d83cfea97e34c5c89e117bd797dedf1a7c5",
         "affectsGlobalScope": false
       },
@@ -1827,7 +1827,7 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "99aa254ceb1f56e62b43483c2d851afe1607b9f8a72345461cf7fdf91450790f",
+        "version": "b7fed1598b0a18846546a9a338763abfd361da4d0c95291a26d3a5f618ca7be2",
         "signature": "fb711b24c20faaf554d8f857c5f2d3994a5181a4c8a3ad17deafd853a5d437d9",
         "affectsGlobalScope": false
       },
@@ -4359,8 +4359,8 @@
         "../node_modules/class-validator/types/index.d.ts"
       ],
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
-        "../src/tasks/task.model.ts",
-        "../src/tasks/tasks.service.ts"
+        "../node_modules/class-validator/types/index.d.ts",
+        "../src/tasks/task.model.ts"
       ],
       "../src/tasks/pipes/task-status-validation.pipe.ts": [
         "../node_modules/@nestjs/common/index.d.ts",

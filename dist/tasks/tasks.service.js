@@ -24,7 +24,6 @@ let TasksService = class TasksService {
             tasks = tasks.filter(task => task.status === status);
         }
         if (search) {
-            console.log("AMR");
             tasks = tasks.filter(task => task.title.includes(search) ||
                 task.description.includes(search));
         }

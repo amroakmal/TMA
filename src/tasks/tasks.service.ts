@@ -19,9 +19,7 @@ export class TasksService {
         if(status) {
             tasks = tasks.filter(task => task.status === status);
         }
-        if(search) {
-            console.log("AMR");
-            
+        if(search) {            
             tasks = tasks.filter(task => 
                 task.title.includes(search) || 
                 task.description.includes(search),
