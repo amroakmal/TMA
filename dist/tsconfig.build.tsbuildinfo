@@ -1821,8 +1821,13 @@
         "signature": "a126f76f8b842c1f9c706b11453d0d83cfea97e34c5c89e117bd797dedf1a7c5",
         "affectsGlobalScope": false
       },
+      "../src/tasks/pipes/task-status-validation.pipe.ts": {
+        "version": "5c372e1769f265c7b1c8931bd8dd888e46878f2fdcca27977e1c2da5c51cc078",
+        "signature": "9330975d1af76179fb51d036d85a75dfcdae7b80fe0e44eb6923d8d3be445611",
+        "affectsGlobalScope": false
+      },
       "../src/tasks/tasks.controller.ts": {
-        "version": "4e15ae7b92aaa930d2d09632cd103d915cad7463fce68f16cbb1f451c3e29f4e",
+        "version": "99aa254ceb1f56e62b43483c2d851afe1607b9f8a72345461cf7fdf91450790f",
         "signature": "fb711b24c20faaf554d8f857c5f2d3994a5181a4c8a3ad17deafd853a5d437d9",
         "affectsGlobalScope": false
       },
@@ -4357,10 +4362,15 @@
         "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
+      "../src/tasks/pipes/task-status-validation.pipe.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/tasks/task.model.ts"
+      ],
       "../src/tasks/tasks.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
+        "../src/tasks/pipes/task-status-validation.pipe.ts",
         "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
@@ -6145,6 +6155,10 @@
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
         "../src/tasks/task.model.ts"
       ],
+      "../src/tasks/pipes/task-status-validation.pipe.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/tasks/task.model.ts"
+      ],
       "../src/tasks/tasks.controller.ts": [
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
@@ -6666,6 +6680,7 @@
       "../src/main.ts",
       "../src/tasks/dto/create-task.dto.ts",
       "../src/tasks/dto/get-tasks-filter.dto.ts",
+      "../src/tasks/pipes/task-status-validation.pipe.ts",
       "../src/tasks/task.model.ts",
       "../src/tasks/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",
