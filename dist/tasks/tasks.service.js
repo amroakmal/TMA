@@ -17,6 +17,9 @@ let TasksService = class TasksService {
     getAllTasks() {
         return this.tasks;
     }
+    getTaskById(id) {
+        return this.tasks.find(task => task.id === id);
+    }
     createTask(createTaskDTO) {
         const { title, description } = createTaskDTO;
         const task = {
