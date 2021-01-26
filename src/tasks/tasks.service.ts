@@ -4,6 +4,7 @@ import { CreateTaskDTO } from './dto/create-task.dto';
 import { GetTasksFilterDTO } from './dto/get-tasks-filter.dto';
 import { TaskRepository } from './task.repository';
 import { Task } from './task.entity';
+import { TaskStatus } from './task-status.enum';
 
 @Injectable()
 export class TasksService {
@@ -42,18 +43,9 @@ export class TasksService {
         return found;
     }
 
-    // createTask(createTaskDTO: CreateTaskDTO): Task {
-    //     const { title, description } = createTaskDTO;
-    //     const task: Task = {
-    //         id: uuid.v1(),
-    //         title,
-    //         description,
-    //         status: TaskStatus.OPEN,
-    //     };
-
-    //     this.tasks.push(task);
-    //     return task;
-    // }
+    async createTask(taskDTO: CreateTaskDTO): Promise<Task> {
+        return this.taskRepository.createTask(taskDTO);
+    }
 
     // updateTaskStatus(id: string, newStatus: TaskStatus): Task {
     //     const task: Task = this.getTaskById(id);

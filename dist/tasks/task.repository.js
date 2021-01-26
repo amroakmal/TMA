@@ -9,7 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TaskRepository = void 0;
 const typeorm_1 = require("typeorm");
 const task_entity_1 = require("./task.entity");
+const task_status_enum_1 = require("./task-status.enum");
 let TaskRepository = class TaskRepository extends typeorm_1.Repository {
+    async createTask(taskDTO) {
+        const { title, description } = taskDTO;
+        const newTask = new task_entity_1.Task();
+        newTask.title = title;
+        newTask.description = description;
+        newTask.status = task_status_enum_1.TaskStatus.OPEN;
+        await newTask.save();
+        return newTask;
+    }
 };
 TaskRepository = __decorate([
     typeorm_1.EntityRepository(task_entity_1.Task)

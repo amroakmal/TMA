@@ -27,6 +27,9 @@ let TasksService = class TasksService {
         }
         return found;
     }
+    async createTask(taskDTO) {
+        return this.taskRepository.createTask(taskDTO);
+    }
 };
 TasksService = __decorate([
     common_1.Injectable(),
