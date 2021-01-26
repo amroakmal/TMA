@@ -20,6 +20,9 @@ let TasksService = class TasksService {
     constructor(taskRepository) {
         this.taskRepository = taskRepository;
     }
+    getTasks(filterDTO) {
+        return this.taskRepository.getTasks(filterDTO);
+    }
     async getTaskById(id) {
         const found = await this.taskRepository.findOne(id);
         if (!found) {
