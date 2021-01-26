@@ -2521,11 +2521,6 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/tasks/task.model.ts": {
-        "version": "f9446ab26ab1375575fef38de6e69becdba32313fc2fe43a73163a8c48fa73e8",
-        "signature": "1f1972745fd56e4323782ccdc86730f1ae6b07fc29012c7c2a2872104f6d6fca",
-        "affectsGlobalScope": false
-      },
       "../node_modules/class-validator/types/validation/ValidationError.d.ts": {
         "version": "e69d0b59db23f59172cb087ee44a71438f809bd214d4f4105abd6090b341cbdc",
         "signature": "e69d0b59db23f59172cb087ee44a71438f809bd214d4f4105abd6090b341cbdc",
@@ -3156,29 +3151,34 @@
         "signature": "6b635da36a7f1556ad7114d34fb6d00a234755aa17a614e316875d615fa9a441",
         "affectsGlobalScope": false
       },
+      "../src/tasks/task-status.enum.ts": {
+        "version": "242989485609671332916ade3d720e566e087e2f3b32e30b39a2a7ba4357195d",
+        "signature": "479a0b48dace76dfe5adf677143c4a01e3a7409cda81f247bc4c8678ef0aae7b",
+        "affectsGlobalScope": false
+      },
       "../src/tasks/dto/get-tasks-filter.dto.ts": {
-        "version": "acc5bde11bb2e8471089882910f5039884e3b9c47c7c84a71979f6d8bcbc399e",
-        "signature": "d0b7e7a8eda290b19f5fe90094da0978cb1d9cf32c4f6138dea0946cc3927131",
+        "version": "42d892d28c5b939cd7f09ad6e40adbbb2fd505d05cd565f9d03d5cd6b10871c9",
+        "signature": "ab8fa3724348c780fe4639b21afcea3e82d481bcc8e6e31c9a5208e1675af6fa",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.service.ts": {
-        "version": "73f137cebb1151cad15ae6bbdfdda95241ea813e2d43ed6f9f0ac52fe88617e4",
-        "signature": "a126f76f8b842c1f9c706b11453d0d83cfea97e34c5c89e117bd797dedf1a7c5",
+        "version": "5aead17b15bc23d512da9eeac24796f967020d7e1090ad55af2da7a09968feed",
+        "signature": "c7b7a4ec8c1f2ed88fc70b256e45ddf8458cb295debebd89fd4e302a8d749695",
         "affectsGlobalScope": false
       },
       "../src/tasks/pipes/task-status-validation.pipe.ts": {
-        "version": "5c372e1769f265c7b1c8931bd8dd888e46878f2fdcca27977e1c2da5c51cc078",
-        "signature": "9330975d1af76179fb51d036d85a75dfcdae7b80fe0e44eb6923d8d3be445611",
+        "version": "81b7d3b21b082516f0a9ff45e28b80c0299522ffd25d537c710168d6af4c3a66",
+        "signature": "52805d6d425fa331f43817091feacc35d4143e40a25910af76ebc9493c24e623",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "b7fed1598b0a18846546a9a338763abfd361da4d0c95291a26d3a5f618ca7be2",
-        "signature": "fb711b24c20faaf554d8f857c5f2d3994a5181a4c8a3ad17deafd853a5d437d9",
+        "version": "aa7727ef836903da7e3511658836516f216618316f51880d6f6f3791cffa3ce6",
+        "signature": "b0ab160a001c63a22dcfcf79f5e5d35c36bf61f346a3adce9bb26bd36cd192c7",
         "affectsGlobalScope": false
       },
       "../src/tasks/task.entity.ts": {
-        "version": "2bb7c0c8576251611a3ef38da17aa2ebec5adfc0147ab3b8a7e270f1b9956f71",
-        "signature": "d468030e899e94ab20fc322fe48b1e0054a02ab56f51522e728477e0076d48f8",
+        "version": "df0d79b3540b781e3433a96d87c26d9e7d1aa55914530ad920f3e35baa8065d5",
+        "signature": "675113a6269485838b8480bcfb0bb33550d649792b18c0c13bdff2b10729dc10",
         "affectsGlobalScope": false
       },
       "../src/tasks/task.repository.ts": {
@@ -6856,15 +6856,15 @@
       ],
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
         "../node_modules/class-validator/types/index.d.ts",
-        "../src/tasks/task.model.ts"
+        "../src/tasks/task-status.enum.ts"
       ],
       "../src/tasks/pipes/task-status-validation.pipe.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/tasks/task.model.ts"
+        "../src/tasks/task-status.enum.ts"
       ],
       "../src/tasks/task.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/tasks/task.model.ts"
+        "../src/tasks/task-status.enum.ts"
       ],
       "../src/tasks/task.repository.ts": [
         "../node_modules/typeorm/index.d.ts",
@@ -6875,7 +6875,6 @@
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/pipes/task-status-validation.pipe.ts",
-        "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
       "../src/tasks/tasks.module.ts": [
@@ -6888,8 +6887,7 @@
       "../src/tasks/tasks.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/tasks/dto/create-task.dto.ts",
-        "../src/tasks/dto/get-tasks-filter.dto.ts",
-        "../src/tasks/task.model.ts"
+        "../src/tasks/dto/get-tasks-filter.dto.ts"
       ]
     },
     "exportedModulesMap": {
@@ -9793,30 +9791,22 @@
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
-        "../src/tasks/task.model.ts"
+        "../src/tasks/task-status.enum.ts"
       ],
       "../src/tasks/pipes/task-status-validation.pipe.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/tasks/task.model.ts"
+        "../src/tasks/task-status.enum.ts"
       ],
       "../src/tasks/task.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/tasks/task.model.ts"
+        "../src/tasks/task-status.enum.ts"
       ],
       "../src/tasks/task.repository.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/tasks/task.entity.ts"
       ],
       "../src/tasks/tasks.controller.ts": [
-        "../src/tasks/dto/create-task.dto.ts",
-        "../src/tasks/dto/get-tasks-filter.dto.ts",
-        "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
-      ],
-      "../src/tasks/tasks.service.ts": [
-        "../src/tasks/dto/create-task.dto.ts",
-        "../src/tasks/dto/get-tasks-filter.dto.ts",
-        "../src/tasks/task.model.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -10599,8 +10589,8 @@
       "../src/tasks/dto/create-task.dto.ts",
       "../src/tasks/dto/get-tasks-filter.dto.ts",
       "../src/tasks/pipes/task-status-validation.pipe.ts",
+      "../src/tasks/task-status.enum.ts",
       "../src/tasks/task.entity.ts",
-      "../src/tasks/task.model.ts",
       "../src/tasks/task.repository.ts",
       "../src/tasks/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",

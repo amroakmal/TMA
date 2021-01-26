@@ -10,13 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GetTasksFilterDTO = void 0;
-const task_model_1 = require("../task.model");
+const task_status_enum_1 = require("../task-status.enum");
 const class_validator_1 = require("class-validator");
 class GetTasksFilterDTO {
 }
 __decorate([
     class_validator_1.IsOptional(),
-    class_validator_1.IsIn([task_model_1.TaskStatus.OPEN, task_model_1.TaskStatus.IN_PROGRESS, task_model_1.TaskStatus.DONE]),
+    class_validator_1.IsIn([task_status_enum_1.TaskStatus.OPEN, task_status_enum_1.TaskStatus.IN_PROGRESS, task_status_enum_1.TaskStatus.DONE]),
     __metadata("design:type", String)
 ], GetTasksFilterDTO.prototype, "status", void 0);
 __decorate([
