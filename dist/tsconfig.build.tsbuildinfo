@@ -3176,8 +3176,18 @@
         "signature": "fb711b24c20faaf554d8f857c5f2d3994a5181a4c8a3ad17deafd853a5d437d9",
         "affectsGlobalScope": false
       },
+      "../src/tasks/task.entity.ts": {
+        "version": "2bb7c0c8576251611a3ef38da17aa2ebec5adfc0147ab3b8a7e270f1b9956f71",
+        "signature": "d468030e899e94ab20fc322fe48b1e0054a02ab56f51522e728477e0076d48f8",
+        "affectsGlobalScope": false
+      },
+      "../src/tasks/task.repository.ts": {
+        "version": "cb223e816ccbf4dd65a7217322e3cb5f24c85b24642b89838aa3f35d2539253b",
+        "signature": "c8817469d239295c9132f3348d0dd0eb99cb6c3a219b9855382b97151ec35b73",
+        "affectsGlobalScope": false
+      },
       "../src/tasks/tasks.module.ts": {
-        "version": "dbfe5fde21324283d62c025e5b22543ac050508a97106dca557a2bc9d4c92ba5",
+        "version": "5f1433137151b213eb3bc7c409c8fe9799fe978318bc53e26a56db1ff0a65ccb",
         "signature": "957753c3d8b7f5d76f3b7dcceab5c1f0b308580c6b4e2819f77518edb37b6c5f",
         "affectsGlobalScope": false
       },
@@ -3374,16 +3384,6 @@
       "../src/main.ts": {
         "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
-        "affectsGlobalScope": false
-      },
-      "../src/tasks/task.entity.ts": {
-        "version": "2bb7c0c8576251611a3ef38da17aa2ebec5adfc0147ab3b8a7e270f1b9956f71",
-        "signature": "d468030e899e94ab20fc322fe48b1e0054a02ab56f51522e728477e0076d48f8",
-        "affectsGlobalScope": false
-      },
-      "../src/tasks/task.repository.ts": {
-        "version": "cb223e816ccbf4dd65a7217322e3cb5f24c85b24642b89838aa3f35d2539253b",
-        "signature": "c8817469d239295c9132f3348d0dd0eb99cb6c3a219b9855382b97151ec35b73",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -6880,6 +6880,8 @@
       ],
       "../src/tasks/tasks.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/tasks/task.repository.ts",
         "../src/tasks/tasks.controller.ts",
         "../src/tasks/tasks.service.ts"
       ],
