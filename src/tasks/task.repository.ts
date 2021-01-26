@@ -14,7 +14,6 @@ export class TaskRepository extends Repository<Task> {
             query.andWhere('task.status = :status', { status });
         }
         if(search) {
-            console.log(search);
             query.andWhere('task.title LIKE :search OR task.description LIKE :search', { search: `%${search}%` });
         }
 
