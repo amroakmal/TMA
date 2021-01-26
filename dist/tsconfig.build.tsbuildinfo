@@ -3172,8 +3172,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.service.ts": {
-        "version": "a75c557478637cebdd5aa48909063b38938e93f1a1546e86b9429705a6767367",
-        "signature": "e80831022613c3838e78701a13e109b0d8f098181ad755025ec2d6338321fdc1",
+        "version": "9ceb1e8c6764cc46d25cfdbc77ea16d6d30abaf0d6607e3fb6ec137c9010c49e",
+        "signature": "c79dc90a3fbb60e3ec567120623ba766230fc45a0f844034ea683567b6598fe1",
         "affectsGlobalScope": false
       },
       "../src/tasks/pipes/task-status-validation.pipe.ts": {
@@ -3182,8 +3182,8 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.controller.ts": {
-        "version": "578e8326859ed0217cbac4fd8064fccecc83fb5a4e1180ea0cda76ba25b30b95",
-        "signature": "2c4ddcc26ff8aded2803d5978cbe51062480ac6dd12583fecc65260ccbc2e324",
+        "version": "274d0fb3111ee86bb9fb5e8a98fc63e2d25dd60b9be9fd4cf5e0d057fd12a28c",
+        "signature": "df4c190028ddc08e0a91715567a5f496f30b08fc9cfaff558f1fd40a0aa07da7",
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.module.ts": {
@@ -6877,6 +6877,7 @@
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
         "../src/tasks/pipes/task-status-validation.pipe.ts",
+        "../src/tasks/task-status.enum.ts",
         "../src/tasks/task.entity.ts",
         "../src/tasks/tasks.service.ts"
       ],
@@ -9815,11 +9816,13 @@
       ],
       "../src/tasks/tasks.controller.ts": [
         "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/task-status.enum.ts",
         "../src/tasks/task.entity.ts",
         "../src/tasks/tasks.service.ts"
       ],
       "../src/tasks/tasks.service.ts": [
         "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/task-status.enum.ts",
         "../src/tasks/task.entity.ts",
         "../src/tasks/task.repository.ts"
       ]

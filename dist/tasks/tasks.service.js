@@ -36,6 +36,12 @@ let TasksService = class TasksService {
             throw new common_1.NotFoundException(`Task with the given id: ${id} is not found!`);
         }
     }
+    async updateTaskStatus(id, newStatus) {
+        const task = await this.getTaskById(id);
+        task.status = newStatus;
+        await task.save();
+        return task;
+    }
 };
 TasksService = __decorate([
     common_1.Injectable(),

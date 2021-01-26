@@ -16,6 +16,8 @@ exports.TasksController = void 0;
 const common_1 = require("@nestjs/common");
 const tasks_service_1 = require("./tasks.service");
 const create_task_dto_1 = require("./dto/create-task.dto");
+const task_status_validation_pipe_1 = require("./pipes/task-status-validation.pipe");
+const task_status_enum_1 = require("./task-status.enum");
 let TasksController = class TasksController {
     constructor(tasksService) {
         this.tasksService = tasksService;
@@ -28,6 +30,9 @@ let TasksController = class TasksController {
     }
     deleteTask(id) {
         return this.tasksService.deleteTask(id);
+    }
+    updateTaskStatus(id, status) {
+        return this.tasksService.updateTaskStatus(id, status);
     }
 };
 __decorate([
@@ -52,6 +57,14 @@ __decorate([
     __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", Promise)
 ], TasksController.prototype, "deleteTask", null);
+__decorate([
+    common_1.Patch('/:id/status'),
+    __param(0, common_1.Param('id', common_1.ParseIntPipe)),
+    __param(1, common_1.Body('status', task_status_validation_pipe_1.TaskStatusValidationPipe)),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number, String]),
+    __metadata("design:returntype", Promise)
+], TasksController.prototype, "updateTaskStatus", null);
 TasksController = __decorate([
     common_1.Controller('tasks'),
     __metadata("design:paramtypes", [tasks_service_1.TasksService])
