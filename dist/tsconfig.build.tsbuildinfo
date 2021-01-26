@@ -3381,6 +3381,11 @@
         "signature": "d468030e899e94ab20fc322fe48b1e0054a02ab56f51522e728477e0076d48f8",
         "affectsGlobalScope": false
       },
+      "../src/tasks/task.repository.ts": {
+        "version": "cb223e816ccbf4dd65a7217322e3cb5f24c85b24642b89838aa3f35d2539253b",
+        "signature": "c8817469d239295c9132f3348d0dd0eb99cb6c3a219b9855382b97151ec35b73",
+        "affectsGlobalScope": false
+      },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
         "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -6861,6 +6866,10 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/tasks/task.model.ts"
       ],
+      "../src/tasks/task.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/tasks/task.entity.ts"
+      ],
       "../src/tasks/tasks.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/tasks/dto/create-task.dto.ts",
@@ -9792,6 +9801,10 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/tasks/task.model.ts"
       ],
+      "../src/tasks/task.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/tasks/task.entity.ts"
+      ],
       "../src/tasks/tasks.controller.ts": [
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
@@ -10586,6 +10599,7 @@
       "../src/tasks/pipes/task-status-validation.pipe.ts",
       "../src/tasks/task.entity.ts",
       "../src/tasks/task.model.ts",
+      "../src/tasks/task.repository.ts",
       "../src/tasks/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",
       "../src/tasks/tasks.service.ts"
