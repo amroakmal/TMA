@@ -30,6 +30,12 @@ let TasksService = class TasksService {
     async createTask(taskDTO) {
         return this.taskRepository.createTask(taskDTO);
     }
+    async deleteTask(id) {
+        const result = await this.taskRepository.delete(id);
+        if (result.affected === 0) {
+            throw new common_1.NotFoundException(`Task with the given id: ${id} is not found!`);
+        }
+    }
 };
 TasksService = __decorate([
     common_1.Injectable(),
