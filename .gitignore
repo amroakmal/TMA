@@ -1,4 +1,4 @@
 node_modules/
 ./src/config
 ./dist/config/
-./src/auth/secretKey.ts/
+./src/auth/SecretKey.ts

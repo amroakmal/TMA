@@ -14,7 +14,7 @@ const typeorm_1 = require("@nestjs/typeorm");
 const auth_controller_1 = require("./auth.controller");
 const auth_service_1 = require("./auth.service");
 const user_repository_1 = require("./user.repository");
-const secretKey_1 = require("./secretKey");
+const SecretKey_1 = require("./SecretKey");
 let AuthModule = class AuthModule {
 };
 AuthModule = __decorate([
@@ -24,7 +24,7 @@ AuthModule = __decorate([
                 defaultStrategy: 'jwt'
             }),
             jwt_1.JwtModule.register({
-                secret: secretKey_1.secret,
+                secret: SecretKey_1.secret,
                 signOptions: {
                     expiresIn: 3600,
                 }

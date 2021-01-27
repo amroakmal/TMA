@@ -3546,13 +3546,13 @@
         "signature": "f40ba575ff797efed67d24593a55141dfc489abeaa75643bb00f1813b935404f",
         "affectsGlobalScope": false
       },
-      "../src/auth/secretKey.ts": {
-        "version": "587e7d2a4523831097a71f04f707a1eb10cdf3b07949f8ebdd2e083dd506d7da",
+      "../src/auth/SecretKey.ts": {
+        "version": "6a2675263088d82af1562ffad0a41fff98b7b03166c6e776a4ba870aff50fcdf",
         "signature": "fe21234ebe3da0934146162f7bd1dae699ebf22170f04d835504392b06a365c6",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.module.ts": {
-        "version": "2e15c7e5c7d1c98feee5bf573bbab68fe33572dbdd6243cce9b62104a931aa8f",
+        "version": "4b03dd18c4fa39846b7a47defeab514342b5fab7edece4aef098377a1b07307a",
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
@@ -7038,9 +7038,9 @@
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../node_modules/@nestjs/passport/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/auth/SecretKey.ts",
         "../src/auth/auth.controller.ts",
         "../src/auth/auth.service.ts",
-        "../src/auth/secretKey.ts",
         "../src/auth/user.repository.ts"
       ],
       "../src/auth/auth.service.ts": [
@@ -10917,12 +10917,12 @@
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/app.module.ts",
+      "../src/auth/SecretKey.ts",
       "../src/auth/auth.controller.ts",
       "../src/auth/auth.module.ts",
       "../src/auth/auth.service.ts",
       "../src/auth/dto/auth-credentials.dto.ts",
       "../src/auth/jwt-payload.interface.ts",
-      "../src/auth/secretKey.ts",
       "../src/auth/user.entity.ts",
       "../src/auth/user.repository.ts",
       "../src/config/typeorm.config.ts",
