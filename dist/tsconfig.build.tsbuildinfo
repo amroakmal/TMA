@@ -3531,14 +3531,19 @@
         "signature": "f2f7db3286c3b373354aa136e0f39793e66a4915f6c25d3c1fb12e17a4ee87a3",
         "affectsGlobalScope": false
       },
+      "../src/auth/jwt-payload.interface.ts": {
+        "version": "7a80bf99359fbf4304db2128ae1a42502a54d49a3a29799398dc0f66fe90bc58",
+        "signature": "77c1b8501a92de931f60f711f96a05e4c972fc42fb2c0c63a228e4e14c82b9a9",
+        "affectsGlobalScope": false
+      },
       "../src/auth/auth.service.ts": {
-        "version": "60ce9b4118982185a2ca14b28d4bbafc267cd778daf4a15a77807facb7779553",
-        "signature": "58c38c8822ff09648015c11e0861facfbc40f44db7089a2d8a7bc30bc9ab6d99",
+        "version": "fda836b6edacfb5022b1534f4d10fadf6521560246e896df9b43013e7c856a8b",
+        "signature": "5d8ed60f8beb667af26a4998b1c24d1c44c2a3e848d7972c67584eb69c6392de",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.controller.ts": {
-        "version": "4b602af28457c879a273b191bcd056082db1ed3663b0365688f77afa4ef13211",
-        "signature": "81876546a67e0e08f7ab8d48be3d64053409d91d792ced884b89550a5d652c8c",
+        "version": "8edc49d7e3b754923bb1c75d5731b978fd6bfa4567475d7b6934e62001957372",
+        "signature": "f40ba575ff797efed67d24593a55141dfc489abeaa75643bb00f1813b935404f",
         "affectsGlobalScope": false
       },
       "../src/auth/secretKey.ts": {
@@ -7040,8 +7045,10 @@
       ],
       "../src/auth/auth.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/jwt/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/auth/dto/auth-credentials.dto.ts",
+        "../src/auth/jwt-payload.interface.ts",
         "../src/auth/user.repository.ts"
       ],
       "../src/auth/dto/auth-credentials.dto.ts": [
@@ -10071,6 +10078,7 @@
         "../src/auth/dto/auth-credentials.dto.ts"
       ],
       "../src/auth/auth.service.ts": [
+        "../node_modules/@nestjs/jwt/index.d.ts",
         "../src/auth/dto/auth-credentials.dto.ts",
         "../src/auth/user.repository.ts"
       ],
@@ -10913,6 +10921,7 @@
       "../src/auth/auth.module.ts",
       "../src/auth/auth.service.ts",
       "../src/auth/dto/auth-credentials.dto.ts",
+      "../src/auth/jwt-payload.interface.ts",
       "../src/auth/secretKey.ts",
       "../src/auth/user.entity.ts",
       "../src/auth/user.repository.ts",
