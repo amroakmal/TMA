@@ -9,13 +9,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserRepository = void 0;
 const typeorm_1 = require("typeorm");
 const user_entity_1 = require("./user.entity");
+const common_1 = require("@nestjs/common");
 let UserRepository = class UserRepository extends typeorm_1.Repository {
     async signUp(authCredentialsDto) {
         const { username, password } = authCredentialsDto;
         const newUser = new user_entity_1.User();
         newUser.username = username;
         newUser.password = password;
-        await newUser.save();
+        try {
+            await newUser.save();
+        }
+        catch (error) {
+            if (error.code === '23505') {
+                throw new common_1.ConflictException(`Username already exists`);
+            }
+            else {
+                throw new common_1.InternalServerErrorException();
+            }
+        }
     }
 };
 UserRepository = __decorate([
