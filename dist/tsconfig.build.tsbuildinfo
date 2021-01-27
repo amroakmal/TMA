@@ -3196,8 +3196,33 @@
         "signature": "6020afb586c5c099dc8978a19d43c895dcc5c7d2cc0ad799ca7d7337ee1bd6d1",
         "affectsGlobalScope": false
       },
+      "../src/auth/auth.controller.ts": {
+        "version": "1b6c96764a4637de8b098ab8059ca321d1e6e51138df7b6e0491acc1f4242779",
+        "signature": "7c02fe0a4fc883c06b00d29d824c931f5e0314ba07bc26d074b27feb0aecd2b3",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/user.entity.ts": {
+        "version": "2c5b51ece3e9ccaf54c88627098ae3759c063cbf2491a386f69dc76cdce32b6a",
+        "signature": "c954094fcc939529bd954e366fb8e69b3c5cbe5a07f80666938f4e0d69da7325",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/user.repository.ts": {
+        "version": "8f373332105f5d62c9f1a10937abcc523b546c66a683794c6c95932818ee380c",
+        "signature": "32ae4f458d65119993fb58221a0cf111a0955cfebaf291d7b16c59fe41cd56b9",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth.service.ts": {
+        "version": "959f773c3d8af870e6186ea2c4eb388e722496eeaec0203531ac1332eecc96cd",
+        "signature": "c4a6420d47d546344df04db798bd62f0db5c33e989924044b420a63b96d3fccb",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth.module.ts": {
+        "version": "ca16d59a9d2d9c116bb32b9c5a53d0696f96f32105691602f957c2d28f89918c",
+        "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "53151f72afd9e15fb04af07634709dbe6e931026c4d7e38a92ff237b10cb3f35",
+        "version": "463e0d71985e5f3223f2bc7dac7b443a5f0a38d030f52b0379b71a3c88edae5d",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -6841,8 +6866,31 @@
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/auth/auth.module.ts",
         "../src/config/typeorm.config.ts",
         "../src/tasks/tasks.module.ts"
+      ],
+      "../src/auth/auth.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts"
+      ],
+      "../src/auth/auth.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/auth/auth.controller.ts",
+        "../src/auth/auth.service.ts",
+        "../src/auth/user.repository.ts"
+      ],
+      "../src/auth/auth.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/auth/user.repository.ts"
+      ],
+      "../src/auth/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/auth/user.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/auth/user.entity.ts"
       ],
       "../src/config/typeorm.config.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts"
@@ -9796,6 +9844,16 @@
         "../node_modules/typeorm/metadata/RelationMetadata.d.ts",
         "../node_modules/typeorm/query-runner/QueryRunner.d.ts"
       ],
+      "../src/auth/auth.service.ts": [
+        "../src/auth/user.repository.ts"
+      ],
+      "../src/auth/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/auth/user.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/auth/user.entity.ts"
+      ],
       "../src/config/typeorm.config.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
@@ -10606,6 +10664,11 @@
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/app.module.ts",
+      "../src/auth/auth.controller.ts",
+      "../src/auth/auth.module.ts",
+      "../src/auth/auth.service.ts",
+      "../src/auth/user.entity.ts",
+      "../src/auth/user.repository.ts",
       "../src/config/typeorm.config.ts",
       "../src/main.ts",
       "../src/tasks/dto/create-task.dto.ts",
