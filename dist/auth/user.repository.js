@@ -10,6 +10,13 @@ exports.UserRepository = void 0;
 const typeorm_1 = require("typeorm");
 const user_entity_1 = require("./user.entity");
 let UserRepository = class UserRepository extends typeorm_1.Repository {
+    async signUp(authCredentialsDto) {
+        const { username, password } = authCredentialsDto;
+        const newUser = new user_entity_1.User();
+        newUser.username = username;
+        newUser.password = password;
+        await newUser.save();
+    }
 };
 UserRepository = __decorate([
     typeorm_1.EntityRepository(user_entity_1.User)

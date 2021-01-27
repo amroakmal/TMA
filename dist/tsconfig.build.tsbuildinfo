@@ -3196,9 +3196,9 @@
         "signature": "6020afb586c5c099dc8978a19d43c895dcc5c7d2cc0ad799ca7d7337ee1bd6d1",
         "affectsGlobalScope": false
       },
-      "../src/auth/auth.controller.ts": {
-        "version": "1b6c96764a4637de8b098ab8059ca321d1e6e51138df7b6e0491acc1f4242779",
-        "signature": "7c02fe0a4fc883c06b00d29d824c931f5e0314ba07bc26d074b27feb0aecd2b3",
+      "../src/auth/dto/auth-credentials.dto.ts": {
+        "version": "fec3b3f79a1de5c4b0249c7a26cb378ae4bb8eaee37c9bfb7cbd11b7f7975d67",
+        "signature": "89c5c2702aa67d1e0649595ee1158802a670f851bc20f1718f45e1b3d1fb8bad",
         "affectsGlobalScope": false
       },
       "../src/auth/user.entity.ts": {
@@ -3207,13 +3207,18 @@
         "affectsGlobalScope": false
       },
       "../src/auth/user.repository.ts": {
-        "version": "8f373332105f5d62c9f1a10937abcc523b546c66a683794c6c95932818ee380c",
-        "signature": "32ae4f458d65119993fb58221a0cf111a0955cfebaf291d7b16c59fe41cd56b9",
+        "version": "89132e415b6adfcbc6fe5adaecd4735314f2c021a339de964bf049d5d9c443af",
+        "signature": "c6536b3df9f533ab310005ae52c99b767dc01e1361b371f9b9fcf76a2f3ff779",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "959f773c3d8af870e6186ea2c4eb388e722496eeaec0203531ac1332eecc96cd",
-        "signature": "c4a6420d47d546344df04db798bd62f0db5c33e989924044b420a63b96d3fccb",
+        "version": "d7485dfb590acb3543e29dcc3fa22a04e8faa91c066be1e5d8393f6a4fd24821",
+        "signature": "20613ba3eddbc1307aee4794514bfd754f6c7f50e0a95171c96f6b43216763cf",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth.controller.ts": {
+        "version": "dc7b60920f176b7de7746a92168e184a1fdde43b906965206025cfbe346fe660",
+        "signature": "ecf67e9aa8c58f3d6a546cb78897f47848dc532a683435a934ec90ff10eb9966",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.module.ts": {
@@ -6871,7 +6876,9 @@
         "../src/tasks/tasks.module.ts"
       ],
       "../src/auth/auth.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts"
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/auth.service.ts",
+        "../src/auth/dto/auth-credentials.dto.ts"
       ],
       "../src/auth/auth.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6883,13 +6890,18 @@
       "../src/auth/auth.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/auth/dto/auth-credentials.dto.ts",
         "../src/auth/user.repository.ts"
+      ],
+      "../src/auth/dto/auth-credentials.dto.ts": [
+        "../node_modules/class-validator/types/index.d.ts"
       ],
       "../src/auth/user.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/auth/user.repository.ts": [
         "../node_modules/typeorm/index.d.ts",
+        "../src/auth/dto/auth-credentials.dto.ts",
         "../src/auth/user.entity.ts"
       ],
       "../src/config/typeorm.config.ts": [
@@ -9844,7 +9856,12 @@
         "../node_modules/typeorm/metadata/RelationMetadata.d.ts",
         "../node_modules/typeorm/query-runner/QueryRunner.d.ts"
       ],
+      "../src/auth/auth.controller.ts": [
+        "../src/auth/auth.service.ts",
+        "../src/auth/dto/auth-credentials.dto.ts"
+      ],
       "../src/auth/auth.service.ts": [
+        "../src/auth/dto/auth-credentials.dto.ts",
         "../src/auth/user.repository.ts"
       ],
       "../src/auth/user.entity.ts": [
@@ -9852,6 +9869,7 @@
       ],
       "../src/auth/user.repository.ts": [
         "../node_modules/typeorm/index.d.ts",
+        "../src/auth/dto/auth-credentials.dto.ts",
         "../src/auth/user.entity.ts"
       ],
       "../src/config/typeorm.config.ts": [
@@ -10667,6 +10685,7 @@
       "../src/auth/auth.controller.ts",
       "../src/auth/auth.module.ts",
       "../src/auth/auth.service.ts",
+      "../src/auth/dto/auth-credentials.dto.ts",
       "../src/auth/user.entity.ts",
       "../src/auth/user.repository.ts",
       "../src/config/typeorm.config.ts",

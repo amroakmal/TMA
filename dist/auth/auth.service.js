@@ -20,6 +20,9 @@ let AuthService = class AuthService {
     constructor(userRepository) {
         this.userRepository = userRepository;
     }
+    async signUp(authCredentialsDto) {
+        return this.userRepository.signUp(authCredentialsDto);
+    }
 };
 AuthService = __decorate([
     common_1.Injectable(),
