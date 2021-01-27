@@ -23,6 +23,12 @@ let AuthService = class AuthService {
     async signUp(authCredentialsDto) {
         return this.userRepository.signUp(authCredentialsDto);
     }
+    async signIn(authCredentialsDto) {
+        const username = await this.userRepository.validateUserPassword(authCredentialsDto);
+        if (!username) {
+            throw new common_1.UnauthorizedException(`Invalid credentials`);
+        }
+    }
 };
 AuthService = __decorate([
     common_1.Injectable(),
